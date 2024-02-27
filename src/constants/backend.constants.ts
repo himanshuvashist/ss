@@ -2,4 +2,12 @@ const PRODUCT = {
   LIST: "products/",
 };
 
-export { PRODUCT };
+const PURCHASE = {
+  LIST: "purchases/",
+};
+
+const CONTACT={
+  LIST:'contacts/'
+}
+
+export { PRODUCT,PURCHASE,CONTACT };
