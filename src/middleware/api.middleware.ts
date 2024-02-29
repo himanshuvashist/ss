@@ -1,9 +1,9 @@
-import axios from "axios";
-import { FC } from "react";
 import AppConfig from "../config/config";
+import axiosInstance from "../utils/axios.utils";
 
 export const requestApiMiddleware = () => {
-  axios.interceptors.request.use((config: any) => {
+
+  axiosInstance.interceptors.request.use((config: any) => {
     let token = AppConfig.BACKEND_TOKEN;
     if (token) {
       config["headers"]["Authorization"] = "Token " + token;
